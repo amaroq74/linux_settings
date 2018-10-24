@@ -1,0 +1,25 @@
+host     rdpc-rh01.slac.stanford.edu
+hostName rdpc-rh01.slac.stanford.edu
+User rherbst
+
+host     ppa-pc87444.slac.stanford.edu
+hostName ppa-pc87444.slac.stanford.edu
+User rherbst
+
+host     slac
+hostName pc95124.slac.stanford.edu
+User rherbst
+
+host     yakut14.slac.stanford.edu
+hostName yakut14.slac.stanford.edu
+User rherbst
+
+host     yakut
+hostName yakut14.slac.stanford.edu
+User rherbst
+
+host     jlab
+hostName login.jlab.org
+User rherbst
+
+

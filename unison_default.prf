@@ -1,0 +1,14 @@
+# Unison preferences file
+
+# Directories to sync
+root = /home/ryan/
+root = /amaroq/home/ryan/
+
+# Paths to sync
+path = bin
+path = Documents
+path = Pictures
+path = Videos
+
+# Ignore
+ignore = Name cache

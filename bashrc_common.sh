@@ -46,6 +46,19 @@ fi
 ########### Prompt ##############
 [ -r /usr/share/bash-completion/bash_completion ] && . /usr/share/bash-completion/bash_completion
 
+export PS_APPS=""
+export PS_APP_LIST=""
+
+function psApp {
+   if [ -z ${PS_APP_LIST} ]; then
+      export PS_APP_LIST="$1"
+   else
+      export PS_APP_LIST="${PS_APP_LIST} $1"
+   fi
+
+   export PS_APPS=" {${PS_APP_LIST}}"
+}
+
 source $HOME/.linux_settings/git-prompt.sh 
 
 GIT_PS1_SHOWDIRTYSTATE=1
@@ -53,5 +66,5 @@ GIT_PS1_SHOWUPSTREAM="auto"
 GIT_PS1_DESCRIBE_STYLE="branch"
 GIT_PS1_SHOWSTASHSTATE=1
 
-PS1='\033[1;33m(\A) \[\033[0;32m\]\u@\h\[\033[0m\]:\[\033[0;36m\][\w]\[\033[0;33m\]$(__git_ps1)\[\033[0m\]\n\$ '
+PS1='\033[1;33m(\A) \[\033[0;32m\]\u@\h\[\033[0m\]:\[\033[0;36m\][\w]\[\033[0;33m\]${PS_APPS}$(__git_ps1)\[\033[0m\]\n\$ '
 

@@ -1,0 +1,100 @@
+[user]
+	name = Ryan Herbst
+   email = rherbst@slac.stanford.edu
+[core]
+	excludesfile = /afs/slac/u/re/rherbst/.gitexcludes
+[branch]
+   #autosetuprebase = always
+[status]
+	submodulesummary = 1
+[alias]
+	# Simple commands
+	co = checkout
+	br = branch
+	ci = commit
+	st = status
+	cp = cherry-pick
+	last = log -1 HEAD
+	unstage = reset HEAD --
+	dt = difftool
+	mt = mergetool
+
+	# Roll back a file easily
+	prevision = "!f() { git checkout `git log --oneline $2 | awk -v commit = "$1" 'FNR == -commit+1 {print $1}'` $2;} ;f"
+
+	# I like to merge without committing right away
+	# This doesn't seem to work
+	merge = merge --no-commit
+
+	# Save everything but then hard reset to current head
+	# Can then recover the changes using reflog
+	wipe = "!f() { git add -A && git commit -qm'WIPE SAVEPOINT' && git reset ${1-HEAD~1} --hard;};f"
+
+	# Special  log aliases
+	hist = "log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short"
+	ls = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cgreen\\ [%cn]" --decorate
+	ll = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cgreen\\ [%cn]" --decorate --name-status
+	lds = log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cgreen\\ [%cn]" --decorate --date=short
+	ld = log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cgreen\\ [%cn]" --decorate --date=relative
+	le = log --oneline --decorate
+	la = "!git config -l | grep alias | cut -c 7-"
+	filelog = log -u
+	dlc = diff --cached HEAD^
+	changes = !git log --name-status HEAD..
+
+	# Find files and strings
+	find = "!git ls-files | grep -i"
+	grep = grep -Ii
+
+	#Submodule aliases
+	sdiff = !git diff && git submodule foreach 'git diff'
+	spush = push --recurse-submodules=on-demand
+	strack = ! git submodule foreach -q --recursive 'git checkout $(git config -f $toplevel/.gitmodules submodule.$name.branch || echo master)'	
+	spull = !git pull --recurse-submodules && git submodule sync --recursive && git submodule update --init --remote --recursive --rebase && git strack
+
+
+	#Subtree aliases
+	sta = "!f() { git subtree add --prefix $2 $1 ${3-master} --squash;};f"
+	stu = "!f() { git subtree pull --prefix $2 $1 ${3-master} --squash;};f"
+	stp = "!f() { git subtree push --prefix $2 $1 ${3-master};}f"
+
+	filter-empty-commits = filter-branch -f --tag-name-filter cat --commit-filter 'git_commit_non_empty_tree "$@"'
+	largest-files = !git rev-list --objects --all | grep \"$(git verify-pack -v .git/objects/pack/*.idx | sort -k 3 -n | tail -50 | awk '{print$1}')\"
+	largest-files-bare = !git rev-list --objects --all | grep \"$(git verify-pack -v objects/pack/*.idx | sort -k 3 -n | tail -50 | awk '{print$1}')\"
+	cleanup = ! git reflog expire --expire=now --all && git gc --prune=now
+
+
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	required = true
+[push]
+   #recurseSubmodules = on-demand
+[fetch]
+	recurseSubmodules = on-demand
+[pull]
+   #rebase = preserve
+[merge]
+	keepBackup = false
+	tool = p4merge
+[mergetool]
+	prompt = false
+[mergetool "p4merge"]
+	cmd = /afs/slac/g/reseng/vol20/perforce/p4v-2015.2.1315639/bin/p4merge "$BASE" "$LOCAL" "$REMOTE" "$MERGED"
+	keepTemporaries = false
+	trustExitCode = false
+	keepBackup = false
+[diff]
+	submodule = log
+	tool = p4merge
+[difftool]
+	prompt = false
+[difftool "p4merge"]
+	cmd = /afs/slac/g/reseng/vol20/perforce/p4v-2015.2.1315639/bin/p4merge "$LOCAL" "$REMOTE"
+	keepTemporaries = false
+	trustExitCode = false
+	keepBackup = false
+[gui]
+	recentrepo = V:/REG/cad_libs/pvlib
+[include]
+	path = /afs/slac/g/reseng/git/group-config

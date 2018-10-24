@@ -29,6 +29,8 @@ alias ssh='ssh -C -Y'
 alias sudo='sudo -E'
 alias vi='vim'
 
+alias update-config='cd $HOME/.linux_settings; git pull; chmod go-rwx ssh_config'
+
 ############# Setup Conda ##############333
 if [ -f $HOME/anaconda3/etc/profile.d/conda.sh ]; then
    source $HOME/anaconda3/etc/profile.d/conda.sh

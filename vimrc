@@ -61,6 +61,7 @@ au BufNewFile,BufRead *.py
     \ set autoindent |
     \ set fileformat=unix |
 
+"    \ set textwidth=79 |
 let python_highlight_all=1
 syntax on
 
@@ -119,6 +120,6 @@ endfunc
 " Switch betweens schemes with F5
 call togglebg#map("<F5>")
 
-set dir=~/.vim/cache
-set backupdir=~/.vim/backup
+set directory=~/.vim/cache/
+set backupdir=~/.vim/backup/
 

@@ -3,6 +3,7 @@
    email = rherbst@slac.stanford.edu
 [core]
 	excludesfile = ~/.gitexcludes
+   filemode=true
 [branch]
    #autosetuprebase = always
 [status]

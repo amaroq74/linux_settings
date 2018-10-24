@@ -66,5 +66,15 @@ GIT_PS1_SHOWUPSTREAM="auto"
 GIT_PS1_DESCRIBE_STYLE="branch"
 GIT_PS1_SHOWSTASHSTATE=1
 
-PS1='\033[1;33m(\A) \[\033[0;32m\]\u@\h\[\033[0m\]:\[\033[0;36m\][\w]\[\033[0;33m\]${PS_APPS}$(__git_ps1)\[\033[0m\]\n\$ '
+# Sequences: https://misc.flogisoft.com/bash/tip_colors_and_formatting
+# 
+# \[\e]2;\u@\h:\w\a\] Forces terminal title to be user@host:path
+# \[\e[1;33m\] # Bold /  Yellow
+# \[\e[0;32m\] # Reset / Green
+# \[\e[0;36m\] # Reset / Cyan
+# \[\e[0;94m\] # Reset / Light Blue
+# \[\e[0;33m\] # Reset / Yellow
+# \[\e[0m\]    # Reset
+
+PS1='\[\e]2;\u@\h:\w\a\]\[\e[1;33m\](\A) \[\e[0;32m\]\u@\h\[\e[0m\]:\[\e[0;36m\][\w]\[\e[0;94m\]${PS_APPS}\[\e[0;33m\]$(__git_ps1)\[\e[0m\]\n\$ '
 

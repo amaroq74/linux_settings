@@ -2,7 +2,7 @@
 	name = Ryan Herbst
    email = rherbst@slac.stanford.edu
 [core]
-	excludesfile = /afs/slac/u/re/rherbst/.gitexcludes
+	excludesfile = ~/.gitexcludes
 [branch]
    #autosetuprebase = always
 [status]
@@ -80,7 +80,7 @@
 [mergetool]
 	prompt = false
 [mergetool "p4merge"]
-	cmd = /afs/slac/g/reseng/vol20/perforce/p4v-2015.2.1315639/bin/p4merge "$BASE" "$LOCAL" "$REMOTE" "$MERGED"
+	cmd = p4merge "$BASE" "$LOCAL" "$REMOTE" "$MERGED"
 	keepTemporaries = false
 	trustExitCode = false
 	keepBackup = false
@@ -90,11 +90,10 @@
 [difftool]
 	prompt = false
 [difftool "p4merge"]
-	cmd = /afs/slac/g/reseng/vol20/perforce/p4v-2015.2.1315639/bin/p4merge "$LOCAL" "$REMOTE"
+	cmd = p4merge "$LOCAL" "$REMOTE"
 	keepTemporaries = false
 	trustExitCode = false
 	keepBackup = false
 [gui]
-	recentrepo = V:/REG/cad_libs/pvlib
-[include]
-	path = /afs/slac/g/reseng/git/group-config
+#[include]
+#	path = /afs/slac/g/reseng/git/group-config

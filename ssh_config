@@ -1,21 +1,18 @@
-host     rdpc-rh01.slac.stanford.edu
-hostName rdpc-rh01.slac.stanford.edu
-User rherbst
 
-host     ppa-pc87444.slac.stanford.edu
-hostName ppa-pc87444.slac.stanford.edu
-User rherbst
+host     amaroq
+hostName gw.amaroq.net
+User ryan
+
+host     gw.amaroq.net
+hostName gw.amaroq.net
+User ryan
 
 host     slac
 hostName pc95124.slac.stanford.edu
 User rherbst
 
-host     yakut14.slac.stanford.edu
-hostName yakut14.slac.stanford.edu
-User rherbst
-
-host     yakut
-hostName yakut14.slac.stanford.edu
+host     pc95124.slac.stanford.edu
+hostName pc95124.slac.stanford.edu
 User rherbst
 
 host     jlab

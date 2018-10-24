@@ -51,5 +51,5 @@ GIT_PS1_SHOWUPSTREAM="auto"
 GIT_PS1_DESCRIBE_STYLE="branch"
 GIT_PS1_SHOWSTASHSTATE=1
 
-PS1='\[\033[0;32m\]\u@\h\[\033[0m\]:\[\033[0;36m\][\w]\[\033[0;33m\]$(__git_ps1)\[\033[0m\]\n\$ '
+PS1='\033[1;33m(\A) \[\033[0;32m\]\u@\h\[\033[0m\]:\[\033[0;36m\][\w]\[\033[0;33m\]$(__git_ps1)\[\033[0m\]\n\$ '
 

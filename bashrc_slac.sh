@@ -8,7 +8,7 @@ export LM_LICENSE_FILE=1717@rdlic
 ##### PATH ######
 export PATH=${PATH}:/usr/kerberos/bin:/u1/wine/bin
 export PATH=/afs/slac.stanford.edu/g/reseng/git/git/bin:${PATH}
-export PATH=${PATH}:/afs/slac/g/reseng/vol20/perforce/p4v-2015.2.1315639/bin/
+export PATH=${PATH}:/afs/slac.stanford.edu/g/reseng/vol20/perforce/p4v-2015.2.1315639/bin/
 
 ##### Libraries ######
 LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:/u1/wine/lib

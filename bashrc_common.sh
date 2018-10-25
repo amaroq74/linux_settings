@@ -28,8 +28,8 @@ alias grep='grep --color=auto'
 alias ssh='ssh -C -Y'
 alias sudo='sudo -E'
 alias vi='vim'
-
-alias update-config='cd $HOME/.linux_settings; git pull; chmod go-rwx ssh_config'
+alias root='sudo -E /bin/bash'
+alias uset='cd $HOME/.linux_settings; git pull; chmod go-rwx ssh_config'
 
 ############# Setup Conda ##############333
 if [ -f $HOME/anaconda3/etc/profile.d/conda.sh ]; then

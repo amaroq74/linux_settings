@@ -13,7 +13,7 @@ export HISTFILESIZE=100000 # Increase history file size
 #export HISTIGNORE=”&:ls:[bf]g:history:exit” # Ignore boring entries
 
 ##### PATH ######
-export PATH="$HOME/bin:/bin:/usr/bin:/usr/local/bin:/sbin:/usr/sbin:/usr/local/sbin:/usr/bin/X11:/opt/X11/bin"
+export PATH="$HOME/bin:/bin:/usr/bin:/usr/local/bin:/sbin:/usr/sbin:/usr/local/sbin:/usr/bin/X11"
 
 ##### Libraries ######
 export LD_LIBRARY_PATH="/usr/local/lib"

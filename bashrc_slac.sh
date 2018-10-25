@@ -16,6 +16,14 @@ LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:/u1/wine/lib
 ##### Aliases ######
 alias afs='kinit; klog.krb5'
 
+alias pius='ssh ryan@gw.pius.org -C -Y \
+               -L 5920:localhost:5901'
+
+alias amaroq='ssh ryan@gw.amaroq.net -C -X \
+                 -L 5920:localhost:5920 \
+                 -L 8022:localhost:8022 \
+                 -L 8006:localhost:3306'
+
 # Simulation
 alias sim='psApp s2017.03; source /afs/slac.stanford.edu/g/reseng/synopsys/vcs-mx/M-2017.03-1/settings.sh'
 

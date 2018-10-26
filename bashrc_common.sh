@@ -29,8 +29,8 @@ alias ssh='ssh -C -Y'
 alias sudo='sudo -E'
 alias vi='vim'
 alias root='sudo -E /bin/bash'
-alias uset='cd $HOME/.linux_settings; git pull; git submodule update; chmod go-rwx ssh_config'
-alias pset='cd $HOME/.linux_settings; git commit -a -m Updates; git push'
+alias uset='cd $HOME/.linux_settings; git pull; git submodule update; chmod go-rwx ssh_config; cd $HOME'
+alias pset='cd $HOME/.linux_settings; git commit -a -m Updates; git push; cd $HOME'
 
 alias slac='ssh rherbst@pc95124.slac.stanford.edu -C -Y \
                -L 5910:localhost:5900'

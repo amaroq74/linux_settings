@@ -31,6 +31,15 @@ alias vi='vim'
 alias root='sudo -E /bin/bash'
 alias uset='cd $HOME/.linux_settings; git pull; chmod go-rwx ssh_config'
 
+alias slac='ssh rherbst@pc95124.slac.stanford.edu -C -Y \
+               -L 5910:localhost:5900'
+
+alias pius='ssh ryan@gw.pius.org -C -Y \
+               -L 5920:localhost:5901'
+
+alias amaroq='ssh ryan@gw.amaroq.net -C -X \
+                 -L 5920:localhost:5920'
+
 ############# Setup Conda ##############333
 if [ -f $HOME/anaconda3/etc/profile.d/conda.sh ]; then
    source $HOME/anaconda3/etc/profile.d/conda.sh

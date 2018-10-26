@@ -15,6 +15,7 @@ LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:/u1/wine/lib
 
 ##### Aliases ######
 alias afs='kinit; klog.krb5'
+alias vnc='systemctl start x11vnc_rherbst'
 
 # Simulation
 alias sim='psApp s2017.03; source /afs/slac.stanford.edu/g/reseng/synopsys/vcs-mx/M-2017.03-1/settings.sh'

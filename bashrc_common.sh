@@ -32,14 +32,11 @@ alias root='sudo -E /bin/bash'
 alias uset='cd $HOME/.linux_settings; git pull; git submodule update; chmod go-rwx ssh_config; cd $HOME'
 alias pset='cd $HOME/.linux_settings; git commit -a -m Updates; git push; cd $HOME'
 
-alias slac='ssh rherbst@pc95124.slac.stanford.edu -C -Y \
-               -L 5910:localhost:5900'
+alias slac='ssh rherbst@pc95124.slac.stanford.edu -C -Y -L 5910:localhost:5900'
 
-alias pius='ssh ryan@gw.pius.org -C -Y \
-               -L 5920:localhost:5901'
+alias pius='ssh ryan@gw.pius.org -C -Y -L 5920:localhost:5901'
 
-alias amaroq='ssh ryan@gw.amaroq.net -C -X \
-                 -L 5920:localhost:5920'
+alias amaroq='ssh ryan@gw.amaroq.net -C -X -L 5920:localhost:5920 -L 8913:localhost:8193'
 
 ############# Setup Conda ##############333
 if [ -f $HOME/anaconda3/etc/profile.d/conda.sh ]; then

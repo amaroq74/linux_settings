@@ -36,7 +36,7 @@ alias slac='ssh rherbst@pc95124.slac.stanford.edu -C -Y -L 5910:localhost:5900'
 
 alias pius='ssh ryan@gw.pius.org -C -Y -L 5920:localhost:5901'
 
-alias amaroq='ssh ryan@gw.amaroq.net -C -X -L 5920:localhost:5920 -L 8913:localhost:8193'
+alias amaroq='ssh ryan@gw.amaroq.net -C -X -L 5920:localhost:5920 -L 8123:localhost:8123'
 
 ############# Setup Conda ##############333
 if [ -f $HOME/anaconda3/etc/profile.d/conda.sh ]; then

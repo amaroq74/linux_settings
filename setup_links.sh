@@ -12,4 +12,4 @@ cd $HOME; ln -sf .linux_settings/login            .login
 cd $HOME; ln -sf .linux_settings/logout           .logout
 cd $HOME; ln -sf .linux_settings/vim              .vim
 cd $HOME; ln -sf .linux_settings/vimrc            .vimrc
-
+cd $HOME; ln -sf .linux_settings/ssh_config       .ssh/config

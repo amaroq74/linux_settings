@@ -13,10 +13,14 @@ export HISTFILESIZE=100000 # Increase history file size
 #export HISTIGNORE=”&:ls:[bf]g:history:exit” # Ignore boring entries
 
 ##### PATH ######
-export PATH="$HOME/bin:/bin:/usr/bin:/usr/local/bin:/sbin:/usr/sbin:/usr/local/sbin:/usr/bin/X11"
+export PATH="$HOME/bin:${PATH}:/bin:/usr/bin:/usr/local/bin:/sbin:/usr/sbin:/usr/local/sbin:/usr/bin/X11"
 
 ##### Libraries ######
-export LD_LIBRARY_PATH="/usr/local/lib"
+if [ -z "$LD_LIBRARY_PATH" ]
+then
+   LD_LIBRARY_PATH=""
+fi
+export LD_LIBRARY_PATH="${LD_LIBRARY_PATH}:/usr/local/lib"
 
 ##### Aliases ######
 alias ls='ls -F --color=auto'

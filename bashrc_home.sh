@@ -24,5 +24,5 @@ alias ax25off='sudo systemctl stop ax25; sudo systemctl stop soundmodem'
 alias ax25on='sudo systemctl restart soundmodem; sudo systemctl restart ax25'
 alias n0ary='rrigctl F 145090000; call usb n0ary-1'
 alias aprs='rrigctl F 144390000; listen'
-alias aprsgui='rrigctl F 144390000; listen'
+alias aprsgui='rrigctl F 144390000; xastir'
 

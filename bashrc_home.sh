@@ -29,3 +29,6 @@ alias aprsen='rrigctl F 144390000 M PKTFM 0'
 alias ax25off='sudo systemctl stop ax25; sudo systemctl stop soundmodem'
 alias ax25on='sudo systemctl restart soundmodem; sudo systemctl restart ax25'
 
+alias rcoff='sudo systemctl stop rigctld'
+alias rcon='sudo systemctl start rigctld'
+

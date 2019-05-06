@@ -14,3 +14,4 @@
 #         Leave lines for all but your remote terminal commented
 #         out (or add a new line if your terminal does not appear).
 
+bash

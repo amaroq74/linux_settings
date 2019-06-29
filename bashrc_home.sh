@@ -32,3 +32,5 @@ alias ax25on='sudo systemctl restart soundmodem; sudo systemctl restart ax25'
 alias rcoff='sudo systemctl stop rigctld'
 alias rcon='sudo systemctl start rigctld'
 
+alias jlab='ssh -Y rherbst@hallgw.jlab.org -L 5930:localhost:5930 -L 5931:localhost:5931'
+

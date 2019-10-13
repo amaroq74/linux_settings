@@ -14,6 +14,7 @@ alias aliska='ssh aliska.amaroq.net -X'
 #### Ham Radio ####
 alias agqrx='ssh aliska.amaroq.net -X "pax11publish -r; gqrx"'
 alias remaudio='vlc --demux=rawaud --rawaud-channels=1 --rawaud-samplerate=48000 udp://@:7355'
+
 alias laudio='pax11publish -r'
 
 alias rgrig='grig --model=2 -r 172.16.20.12 &'

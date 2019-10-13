@@ -1,21 +1,31 @@
 
-host     amaroq
-hostName gw.amaroq.net
-User ryan
+host amaroq
+   hostName gw.amaroq.net
+   User ryan
 
-host     gw.amaroq.net
-hostName gw.amaroq.net
-User ryan
+host gw.amaroq.net
+   hostName gw.amaroq.net
+   User ryan
 
-host     slac
-hostName pc95124.slac.stanford.edu
-User rherbst
+host slac
+   hostName pc95124.slac.stanford.edu
+   User rherbst
 
-host     pc95124.slac.stanford.edu
-hostName pc95124.slac.stanford.edu
-User rherbst
+host ubuntu-test
+   hostName 134.79.129.142
 
-host     jlab
-hostName login.jlab.org
-User rherbst
+Host smurf-srv09
+    User cryo
+    ForwardX11 yes
+    ForwardX11Trusted yes
+    Compression yes
+    HostName localhost
+    Port 9788
 
+Host smurf-srv10
+    User cryo
+    ForwardX11 yes
+    ForwardX11Trusted yes
+    Compression yes
+    HostName localhost
+    Port 9798

@@ -22,7 +22,7 @@ alias rrigctl='rigctl --model=2 -r 172.16.20.12'
 alias lrigctl='rigctl --model=2 -r 127.0.0.1'
 
 alias pcon='rrigctl F 145730000 M PKTFM 0; pat connect ax25:///K6ATH-10'
-alias pweb='rrigctl F 145730000 M PKTFM 0; pat http'
+alias pconhf='rrigctl F 14064900 M PKTFM 0; pat connect ax25:///K6IXA'
 alias n0ary='rrigctl F 145090000 M PKTFM 0; call usb n0ary-1'
 alias aprs='rrigctl F 144390000 M PKTFM 0; xastir'
 alias aprsen='rrigctl F 144390000 M PKTFM 0'

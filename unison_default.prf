@@ -6,9 +6,7 @@ root = /amaroq/home/ryan/
 
 # Paths to sync
 path = bin
-path = Documents
-path = Pictures
-path = Videos
+path = private
 
 # Ignore
 ignore = Name cache

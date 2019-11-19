@@ -29,3 +29,19 @@ Host smurf-srv10
     Compression yes
     HostName localhost
     Port 9798
+
+Host rdsrv300
+    PreferredAuthentications=password
+    PubkeyAuthentication=no
+
+Host rdsrv301
+    PreferredAuthentications=password
+    PubkeyAuthentication=no
+
+Host rdsrv302
+    PreferredAuthentications=password
+    PubkeyAuthentication=no
+
+Host rdsrv303
+    PreferredAuthentications=password
+    PubkeyAuthentication=no

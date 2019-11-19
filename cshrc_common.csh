@@ -1,9 +1,12 @@
 # TCSH 
 
 # Setup initial path
-setenv path ${HOME}/bin:/sbin:/usr/sbin:/usr/local/sbin:/bin:/usr/bin:/usr/local/bin:/usr/bin/X11
+setenv PATH ${HOME}/bin:${PATH}:/sbin:/usr/sbin:/usr/local/sbin:/bin:/usr/bin:/usr/local/bin:/usr/bin/X11
 
-setenv LD_LIBRARY_PATH "/usr/local/lib"
+if ( ! $?LD_LIBRARY_PATH ) then
+   setenv LD_LIBRARY_PATH ""
+endif
+setenv LD_LIBRARY_PATH "${LD_LIBRARY_PATH}:/usr/local/lib"
 
 # Umask
 umask 007

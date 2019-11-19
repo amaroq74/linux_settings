@@ -1,4 +1,8 @@
 
+host *
+GSSAPIAuthentication yes
+GSSAPIDelegateCredentials yes
+
 host     amaroq
 hostName gw.amaroq.net
 User ryan

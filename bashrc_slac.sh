@@ -32,7 +32,7 @@ alias x2018.1='psApp x2018.1; source /afs/slac/g/reseng/xilinx/vivado_2018.1/Viv
 alias x2018.2='psApp x2018.2; source /afs/slac/g/reseng/xilinx/vivado_2018.2/Vivado/2018.2/settings64.sh'
 alias x2018.3='psApp x2018.3; source /afs/slac/g/reseng/xilinx/vivado_2018.3/Vivado/2018.3/settings64.sh'
 alias x2019.1='psApp x2019.1; source /afs/slac/g/reseng/xilinx/vivado_2019.1/settings64.sh'
-alias x2019.2='psApp x2019.2; source /afs/slac/g/reseng/xilinx/vivado_2019.1/Vivado/2019.2/settings64.sh'
+alias x2019.2='psApp x2019.2; source /afs/slac/g/reseng/xilinx/2019.2/Vivado/2019.2/settings64.sh'
 
 alias xil='x2019.1'
 

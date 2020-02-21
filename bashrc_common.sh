@@ -28,6 +28,7 @@ alias l='ls --color=auto'
 alias ll='ls -l --color=auto'
 alias la='ls -la --color=auto'
 alias grep='grep --color=auto'
+alias dlog='journalctl -u dnsmasq -r | grep DHCPACK | less'
 
 alias ssh='ssh -C -Y'
 alias sudo='sudo -E'

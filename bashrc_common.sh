@@ -43,6 +43,8 @@ alias pius='ssh ryan@gw.pius.org -C -Y -L 5920:localhost:5901'
 
 alias amaroq='ssh ryan@gw.amaroq.net -C -X -L 5920:localhost:5920 -L 8123:localhost:8123'
 
+alias gmenu="awk -F\' '/menuentry / {print $2}' /boot/grub/grub.cfg"
+
 ############# Setup Conda ##############333
 if [ -f $HOME/anaconda3/etc/profile.d/conda.sh ]; then
    source $HOME/anaconda3/etc/profile.d/conda.sh

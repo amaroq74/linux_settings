@@ -102,7 +102,7 @@ autocmd vimenter * NERDTree
 " Color schemes
 if has('gui_running')
   set background=dark
-  colorscheme solarized
+   colorscheme solarized
    set lines=50 columns=150
    set guioptions-=m  "remove menu bar
    set guioptions-=T  "remove toolbar

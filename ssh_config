@@ -49,3 +49,8 @@ Host rdsrv302
 Host rdsrv303
     PreferredAuthentications=password
     PubkeyAuthentication=no
+
+Host rdsrv307
+    PreferredAuthentications=password
+    PubkeyAuthentication=no
+

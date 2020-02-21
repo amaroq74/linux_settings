@@ -65,6 +65,8 @@ au BufNewFile,BufRead *.py
 let python_highlight_all=1
 syntax on
 
+autocmd BufWritePre * %s/\s\+$//e
+
 " Find bad whitespace
 "au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
 

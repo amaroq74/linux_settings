@@ -44,6 +44,7 @@ alias pius='ssh ryan@gw.pius.org -C -Y -L 5920:localhost:5901'
 alias amaroq='ssh ryan@gw.amaroq.net -C -X -L 5920:localhost:5920 -L 8123:localhost:8123'
 
 alias dnslist='sudo journalctl -u dnsmasq -r | grep DHCPACK | less'
+alias gmenu="awk -F\' '/menuentry / {print $2}' /boot/grub/grub.cfg"
 
 ############# Setup Conda ##############333
 if [ -f $HOME/anaconda3/etc/profile.d/conda.sh ]; then
@@ -73,7 +74,7 @@ function psApp {
    export PS_APPS=" {${PS_APP_LIST}}"
 }
 
-source $HOME/.linux_settings/git-prompt.sh 
+source $HOME/.linux_settings/git-prompt.sh
 
 GIT_PS1_SHOWDIRTYSTATE=1
 GIT_PS1_SHOWUPSTREAM="auto"
@@ -81,7 +82,7 @@ GIT_PS1_DESCRIBE_STYLE="branch"
 GIT_PS1_SHOWSTASHSTATE=1
 
 # Sequences: https://misc.flogisoft.com/bash/tip_colors_and_formatting
-# 
+#
 # \[\e]2;\u@\h:\w\a\] Forces terminal title to be user@host:path
 # \[\e[1;33m\] # Bold /  Yellow
 # \[\e[0;32m\] # Reset / Green

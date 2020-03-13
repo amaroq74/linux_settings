@@ -24,6 +24,7 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 Plugin 'Xuyuanp/nerdtree-git-plugin'
+Plugin 'nvie/vim-flake8'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -49,8 +50,8 @@ command -range Inst    <line1>,<line2> s/\(\S\+\)\(\s\+\):.*/\1\2 => \1,/
 command -range Sig     <line1>,<line2> s/\(\S\+\)\(\s\+\):\(\s\+\)\(\S\+\)\(\s\+\)\(\S\+\)/signal \1\2:\3\6/
 command -range -nargs=1 InstInd <line1>,<line2> s/=>/\( \)\{<args>\}=>/
 command -range Sysc    <line1>,<line2> s/\(\s\+\)\(\S\+\).*/\1\2("\2"),/
-command -range Debug   <line1>,<line2> s/\(\s\+\)\(\S\+\)\(\s\+\)\(\S\+\)\(\s\+\):.*/   attribute mark_debug of \4\5: signal is "true";/ 
-command -range Debugp  <line1>,<line2> s/\(\s\+\)\(\S\+\)\(\s\+\):.*/   attribute mark_debug of \2\3: signal is "true";/ 
+command -range Debug   <line1>,<line2> s/\(\s\+\)\(\S\+\)\(\s\+\)\(\S\+\)\(\s\+\):.*/   attribute mark_debug of \4\5: signal is "true";/
+command -range Debugp  <line1>,<line2> s/\(\s\+\)\(\S\+\)\(\s\+\):.*/   attribute mark_debug of \2\3: signal is "true";/
 
 " Python
 au BufNewFile,BufRead *.py
@@ -64,6 +65,8 @@ au BufNewFile,BufRead *.py
 "    \ set textwidth=79 |
 let python_highlight_all=1
 syntax on
+
+autocmd BufWritePre * %s/\s\+$//e
 
 " Find bad whitespace
 "au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
@@ -99,7 +102,7 @@ autocmd vimenter * NERDTree
 " Color schemes
 if has('gui_running')
   set background=dark
-  colorscheme solarized
+   colorscheme solarized
    set lines=50 columns=150
    set guioptions-=m  "remove menu bar
    set guioptions-=T  "remove toolbar

@@ -43,6 +43,8 @@ alias pius='ssh ryan@gw.pius.org -C -Y -L 5920:localhost:5901'
 
 alias amaroq='ssh ryan@gw.amaroq.net -C -X -L 5920:localhost:5920 -L 8123:localhost:8123'
 
+alias dnslist='sudo journalctl -u dnsmasq -r | grep DHCPACK | less'
+
 ############# Setup Conda ##############333
 if [ -f $HOME/anaconda3/etc/profile.d/conda.sh ]; then
    source $HOME/anaconda3/etc/profile.d/conda.sh

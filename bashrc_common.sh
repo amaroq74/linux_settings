@@ -43,7 +43,7 @@ alias pius='ssh ryan@gw.pius.org -C -Y -L 5920:localhost:5901'
 
 alias amaroq='ssh ryan@gw.amaroq.net -C -X -L 5920:localhost:5920 -L 8123:localhost:8123'
 
-alias dnslist='sudo journalctl -u dnsmasq -r | grep DHCPACK | less'
+alias dlist='sudo journalctl -u dnsmasq -r | grep DHCPACK | head'
 alias gmenu="awk -F\' '/menuentry / {print $2}' /boot/grub/grub.cfg"
 
 ############# Setup Conda ##############333

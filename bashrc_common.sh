@@ -11,7 +11,6 @@ export HISTCONTROL=ignoredups:erasedups # No duplicate entries
 export HISTSIZE=100000 # Increase history file length
 export HISTFILESIZE=100000 # Increase history file size
 #export HISTIGNORE=”&:ls:[bf]g:history:exit” # Ignore boring entries
-export GITHUB_TOKEN=7db0324dc6ff7e3504ee3234ea996283cc095cc6
 
 ##### PATH ######
 export PATH="$HOME/bin:${PATH}:/bin:/usr/bin:/usr/local/bin:/sbin:/usr/sbin:/usr/local/sbin:/usr/bin/X11"
@@ -74,6 +73,10 @@ function psApp {
 
    export PS_APPS=" {${PS_APP_LIST}}"
 }
+
+if [ -f $HOME/.linux_settings/bashrc_local.sh ]; then
+   source $HOME/.linux_settings/bashrc_local.sh
+fi
 
 source $HOME/.linux_settings/git-prompt.sh
 

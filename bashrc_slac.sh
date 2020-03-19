@@ -4,7 +4,6 @@ source ~/.linux_settings/bashrc_common.sh
 ##### Variables ######
 export PRINTER=B84Copier
 export LM_LICENSE_FILE=1717@rdlic
-export GITHUB_TOKEN=7db0324dc6ff7e3504ee3234ea996283cc095cc6
 
 ##### PATH ######
 export PATH=${PATH}:/usr/kerberos/bin:/u1/wine/bin

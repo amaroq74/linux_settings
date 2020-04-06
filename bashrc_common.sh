@@ -39,7 +39,7 @@ alias pset='cd $HOME/.linux_settings; git commit -a -m Updates; git push; cd $HO
 
 alias slac='ssh rherbst@pc95124.slac.stanford.edu -C -Y -L 5910:localhost:5900 -L 5911:localhost:5901'
 
-alias pius='ssh ryan@gw.pius.org -C -Y -L 5920:localhost:5901'
+alias pius='ssh ryan@gw.pius.org -C -Y -L 5920:localhost:5901 -L 5921:172.16.24.121:5900'
 
 alias amaroq='ssh ryan@gw.amaroq.net -C -X -L 5920:localhost:5920 -L 8123:localhost:8123'
 
@@ -74,10 +74,13 @@ function psApp {
    export PS_APPS=" {${PS_APP_LIST}}"
 }
 
+<<<<<<< HEAD
 if [ -f $HOME/.linux_settings/bashrc_local.sh ]; then
    source $HOME/.linux_settings/bashrc_local.sh
 fi
 
+=======
+>>>>>>> Updates
 source $HOME/.linux_settings/git-prompt.sh
 
 GIT_PS1_SHOWDIRTYSTATE=1

@@ -97,3 +97,4 @@ if [ -f $HOME/.linux_settings/bashrc_local.sh ]; then
    source $HOME/.linux_settings/bashrc_local.sh
 fi
 
+

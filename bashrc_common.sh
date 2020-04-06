@@ -74,13 +74,6 @@ function psApp {
    export PS_APPS=" {${PS_APP_LIST}}"
 }
 
-<<<<<<< HEAD
-if [ -f $HOME/.linux_settings/bashrc_local.sh ]; then
-   source $HOME/.linux_settings/bashrc_local.sh
-fi
-
-=======
->>>>>>> Updates
 source $HOME/.linux_settings/git-prompt.sh
 
 GIT_PS1_SHOWDIRTYSTATE=1
@@ -99,4 +92,8 @@ GIT_PS1_SHOWSTASHSTATE=1
 # \[\e[0m\]    # Reset
 
 PS1='\[\e]2;\u@\h:\w\a\]\[\e[1;33m\](\A) \[\e[0;32m\]\u@\h\[\e[0m\]:\[\e[0;36m\][\w]\[\e[0;94m\]${PS_APPS}\[\e[0;33m\]$(__git_ps1)\[\e[0m\]\n\$ '
+
+if [ -f $HOME/.linux_settings/bashrc_local.sh ]; then
+   source $HOME/.linux_settings/bashrc_local.sh
+fi
 

@@ -8,6 +8,9 @@ export PATH="$PATH:/opt/X11/bin"
 
 ##### Libraries ######
 
+export CONDA_BUILD_SYSROOT=/opt/MacOSX10.9.sdk
+export CONDA_BUILD=1
+
 ##### Aliases ######
 alias ls='ls -F'
 alias l='ls'
@@ -15,3 +18,5 @@ alias ll='ls -l'
 alias la='ls -la'
 alias grep='grep'
 
+
+export WMSJAVA_HOME="/Library/WowzaStreamingEngine-4.7.8/java"

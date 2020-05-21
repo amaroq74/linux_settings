@@ -15,3 +15,5 @@
 #         out (or add a new line if your terminal does not appear).
 
 bash
+
+setenv WMSJAVA_HOME "/Library/WowzaStreamingEngine-4.7.8/java"

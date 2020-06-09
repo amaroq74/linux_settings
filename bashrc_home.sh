@@ -36,10 +36,9 @@ alias rcon='sudo systemctl start rigctld'
 
 alias jlab='ssh -Y rherbst@hallgw.jlab.org -L 5930:localhost:5930 -L 5931:localhost:5931'
 
-<<<<<<< HEAD
+
 alias aliskaVnc='vncserver -geometry 1024x720'
-=======
+
 alias epcb='wine $HOME/.wine/drive_c/Program\ Files\ \(x86\)/ExpressPCB/ExpressPCB'
 alias esch='wine $HOME/.wine/drive_c/Program\ Files\ \(x86\)/ExpressPCB/ExpressSCH'
->>>>>>> 0f95c3c... Updates
 

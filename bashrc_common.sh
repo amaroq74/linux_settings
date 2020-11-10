@@ -37,7 +37,7 @@ alias root='sudo -E /bin/bash'
 alias uset='cd $HOME/.linux_settings; git pull; git submodule update; chmod go-rwx ssh_config; cd $HOME'
 alias pset='cd $HOME/.linux_settings; git commit -a -m Updates; git push; cd $HOME'
 
-alias slac='ssh rherbst@pc95124.slac.stanford.edu -C -Y -L 5910:localhost:5900 -L 5911:localhost:5901'
+alias slac='ssh rherbst@pc95124.slac.stanford.edu -C -Y -L 5910:localhost:5900 -L 5911:localhost:5901 -L 5912:localhost:5902'
 
 alias pius='ssh ryan@gw.pius.org -C -Y -L 5920:localhost:5901 -L 5921:172.16.24.121:5900 -L 5922:172.16.24.122:5900'
 

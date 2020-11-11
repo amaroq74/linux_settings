@@ -24,12 +24,12 @@ alias lrigctl='rigctl --model=2 -r 127.0.0.1'
 
 alias pcon='rrigctl F 145730000 M PKTFM 0; pat connect ax25:///K6ATH-10'
 alias pconhf='rrigctl F 14064900 M PKTFM 0; pat connect ax25:///K6IXA'
-alias n0ary='rrigctl F 145090000 M PKTFM 0; call usb n0ary-1'
+alias n0ary='rrigctl F 145090000 M PKTFM 0; call sm0 n0ary-1'
 alias aprs='rrigctl F 144390000 M PKTFM 0; xastir'
 alias aprsen='rrigctl F 144390000 M PKTFM 0'
 
-alias ax25off='sudo systemctl stop ax25; sudo systemctl stop soundmodem'
-alias ax25on='sudo systemctl restart soundmodem; sudo systemctl restart ax25'
+alias ax25off='sudo systemctl stop ax25; sleep 1; sudo systemctl stop soundmodem'
+alias ax25on='sudo systemctl restart soundmodem; sleep 1; sudo systemctl restart ax25'
 
 alias rcoff='sudo systemctl stop rigctld'
 alias rcon='sudo systemctl start rigctld'
@@ -42,4 +42,6 @@ alias aliskaVnc='vncserver -geometry 1024x720'
 
 alias epcb='wine $HOME/.wine/drive_c/Program\ Files\ \(x86\)/ExpressPCB/ExpressPCB'
 alias esch='wine $HOME/.wine/drive_c/Program\ Files\ \(x86\)/ExpressPCB/ExpressSCH'
+
+alias rotMon='vlc rtsp://view:lolhak@172.16.20.5:554/h264Preview_07_sub'
 

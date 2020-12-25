@@ -36,5 +36,5 @@ alias rcon='sudo systemctl start rigctld'
 
 alias jlab='ssh -Y rherbst@hallgw.jlab.org -L 5930:localhost:5930 -L 5931:localhost:5931'
 
-alias aliskaVnc='vncserver -geometry 1024x720'
+alias aliskaVnc='vncserver -geometry 1080x1024'
 

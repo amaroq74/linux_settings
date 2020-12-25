@@ -36,13 +36,8 @@ alias rcon='sudo systemctl start rigctld'
 
 alias jlab='ssh -Y rherbst@hallgw.jlab.org -L 5930:localhost:5930 -L 5931:localhost:5931'
 
-<<<<<<< HEAD
 alias aliskaVnc='vncserver -geometry 1080x1024'
-=======
 alias vlc_radio='vlc --demux=rawaud --rawaud-channels=1 --rawaud-samplerate=48000 udp://@:7355'
-
-alias aliskaVnc='vncserver -geometry 1024x720'
->>>>>>> 9acebbf341e92860dac20d1c43a3bd04f328281e
 
 alias epcb='wine $HOME/.wine/drive_c/Program\ Files\ \(x86\)/ExpressPCB/ExpressPCB'
 alias esch='wine $HOME/.wine/drive_c/Program\ Files\ \(x86\)/ExpressPCB/ExpressSCH'

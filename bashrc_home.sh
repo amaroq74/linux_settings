@@ -9,38 +9,17 @@ export USER_LIB_PATH=$HOME/projects/arduino_libraries/libraries/
 ##### Libraries ######
 
 ##### Aliases ######
-alias aliska='ssh aliska.amaroq.net -X'
 
 #### Ham Radio ####
-alias agqrx='ssh aliska.amaroq.net -X "pax11publish -r; gqrx"'
-alias remaudio='vlc --demux=rawaud --rawaud-channels=1 --rawaud-samplerate=48000 udp://@:7355'
-
-alias laudio='pax11publish -r'
-
-alias rgrig='grig --model=2 -r 172.16.20.12 &'
 alias lgrig='grig --model=2 -r 127.0.0.1 &'
-alias rrigctl='rigctl --model=2 -r 172.16.20.12'
 alias lrigctl='rigctl --model=2 -r 127.0.0.1'
+alias pcon='lrigctl F 145730000 M PKTFM 0; pat connect ax25:///K6ATH-10'
+alias n0ary='lrigctl F 145090000 M PKTFM 0; axcall sm0 n0ary-1'
+alias aprsen='lrigctl F 144390000 M PKTFM 0'
+alias ardopen='lrigctl F 007095000 M USB 0'
+alias ardop='/usr/local/bin/piardopc 8515 plughw:2,0 plughw:2,0'
+alias gt='GridTracker --enable-speech-dispatcher'
 
-alias pcon='rrigctl F 145730000 M PKTFM 0; pat connect ax25:///K6ATH-10'
-alias pconhf='rrigctl F 14064900 M PKTFM 0; pat connect ax25:///K6IXA'
-alias n0ary='rrigctl F 145090000 M PKTFM 0; call sm0 n0ary-1'
-alias aprs='rrigctl F 144390000 M PKTFM 0; xastir'
-alias aprsen='rrigctl F 144390000 M PKTFM 0'
-
-alias ax25off='sudo systemctl stop ax25; sleep 1; sudo systemctl stop soundmodem'
-alias ax25on='sudo systemctl restart soundmodem; sleep 1; sudo systemctl restart ax25'
-
-alias rcoff='sudo systemctl stop rigctld'
-alias rcon='sudo systemctl start rigctld'
-
-alias jlab='ssh -Y rherbst@hallgw.jlab.org -L 5930:localhost:5930 -L 5931:localhost:5931'
-
-alias aliskaVnc='vncserver -geometry 1120x1024'
-alias vlc_radio='vlc --demux=rawaud --rawaud-channels=1 --rawaud-samplerate=48000 udp://@:7355'
-
-alias epcb='wine $HOME/.wine/drive_c/Program\ Files\ \(x86\)/ExpressPCB/ExpressPCB'
-alias esch='wine $HOME/.wine/drive_c/Program\ Files\ \(x86\)/ExpressPCB/ExpressSCH'
-
-alias rotMon='vlc rtsp://view:lolhak@172.16.20.5:554/h264Preview_07_sub'
+alias ax25off='sudo systemctl stop ax25; sleep 1; sudo systemctl stop direwolf'
+alias ax25on='sudo systemctl restart direwolf; sleep 1; sudo systemctl restart ax25'
 

@@ -28,7 +28,6 @@ alias l='ls --color=auto'
 alias ll='ls -l --color=auto'
 alias la='ls -la --color=auto'
 alias grep='grep --color=auto'
-alias dlog='journalctl -u dnsmasq -r | grep DHCPACK | less'
 
 alias ssh='ssh -C -Y'
 alias sudo='sudo -E'
@@ -39,7 +38,7 @@ alias pset='cd $HOME/.linux_settings; git commit -a -m Updates; git push; cd $HO
 
 alias slac='ssh ryan@pc95124.slac.stanford.edu -p 2222 -C -Y -L 5910:localhost:5900 -L 5911:localhost:5901 -L 5912:localhost:5902'
 alias pius='ssh ryan@gw.pius.org -C -Y -L 5920:localhost:5901 -L 5921:172.16.24.121:5900 -L 5922:172.16.24.122:5900'
-alias amaroq='ssh ryan@gw.amaroq.net -p 2222 -C -X'
+alias amaroq='ssh ryan@gw.amaroq.net -p 2222 -C -X -L 5950:172.16.20.13:5900'
 
 alias dlist='sudo journalctl -u dnsmasq -r | grep DHCPACK | head'
 alias gmenu="awk -F\' '/menuentry / {print $2}' /boot/grub/grub.cfg"

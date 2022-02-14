@@ -11,9 +11,9 @@ export PATH=$PATH:/opt/stm32cubeprog/bin/
 
 ##### Aliases ######
 
-alias misc_mount='mkdir $HOME/Desktop/misc; sudo cryptsetup luksOpen $HOME/Documents/Personal/old/misc.iso misc;sudo mount -o ro /dev/mapper/misc $HOME/Desktop/misc'
+alias misc_mount='mkdir $HOME/Desktop/misc; sudo cryptsetup luksOpen $HOME/Documents/SystemBackup/old/misc.iso misc;sudo mount -o ro /dev/mapper/misc $HOME/Desktop/misc'
 alias misc_umount='sudo umount $HOME/Desktop/misc; sudo cryptsetup luksClose misc; rmdir $HOME/Desktop/misc'
-alias gm_mount='mkdir $HOME/Desktop/gm; sudo cryptsetup luksOpen $HOME/Documents/Personal/old/gm.iso gm;sudo mount -o ro /dev/mapper/gm $HOME/Desktop/gm'
+alias gm_mount='mkdir $HOME/Desktop/gm; sudo cryptsetup luksOpen $HOME/Documents/SystemBackups/old/gm.iso gm;sudo mount -o ro /dev/mapper/gm $HOME/Desktop/gm'
 alias gm_umount='sudo umount $HOME/Desktop/gm; sudo cryptsetup luksClose gm; rmdir $HOME/Desktop/gm'
 
 #### Ham Radio ####

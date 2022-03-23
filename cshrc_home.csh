@@ -48,3 +48,5 @@ switch ($TERM)
         set prompt = "%m %~%# "
         breaksw
 endsw
+
+setenv WMSJAVA_HOME "/Library/WowzaStreamingEngine-4.7.8/java"

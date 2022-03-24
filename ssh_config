@@ -54,7 +54,39 @@ Host rdsrv304
     PreferredAuthentications=password
     PubkeyAuthentication=no
 
+Host rdsrv305
+    PreferredAuthentications=password
+    PubkeyAuthentication=no
+
+Host rdsrv306
+    PreferredAuthentications=password
+    PubkeyAuthentication=no
+
 Host rdsrv307
+    PreferredAuthentications=password
+    PubkeyAuthentication=no
+
+Host rdsrv308
+    PreferredAuthentications=password
+    PubkeyAuthentication=no
+
+Host rdsrv309
+    PreferredAuthentications=password
+    PubkeyAuthentication=no
+
+Host rdsrv310
+    PreferredAuthentications=password
+    PubkeyAuthentication=no
+
+Host rdsrv311
+    PreferredAuthentications=password
+    PubkeyAuthentication=no
+
+Host rdsrv312
+    PreferredAuthentications=password
+    PubkeyAuthentication=no
+
+Host rdsrv313
     PreferredAuthentications=password
     PubkeyAuthentication=no
 

@@ -50,7 +50,7 @@
 	#Submodule aliases
 	sdiff = !git diff && git submodule foreach 'git diff'
 	spush = push --recurse-submodules=on-demand
-	strack = ! git submodule foreach -q --recursive 'git checkout $(git config -f $toplevel/.gitmodules submodule.$name.branch || echo master)'	
+	strack = ! git submodule foreach -q --recursive 'git checkout $(git config -f $toplevel/.gitmodules submodule.$name.branch || echo master)'
 	spull = !git pull --recurse-submodules && git submodule sync --recursive && git submodule update --init --remote --recursive --rebase && git strack
 
 
@@ -100,3 +100,8 @@
 #	path = /afs/slac/g/reseng/git/group-config
 [safe]
 	directory = /amaroq/hass
+	directory = /afs/slac.stanford.edu/u/ey/rherbst/projects/dace/dace
+	directory = /afs/slac.stanford.edu/g/reseng/smartsheets/tid-id-smartsheets
+	directory = /afs/slac.stanford.edu/u/ey/rherbst/projects/tid-id-smartsheets
+	directory = /afs/slac.stanford.edu/u/ey/rherbst/projects/gen_daq/rogue_p10
+	directory = /afs/slac.stanford.edu/u/ey/rherbst/.linux_settings

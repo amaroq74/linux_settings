@@ -98,3 +98,5 @@
 [gui]
 #[include]
 #	path = /afs/slac/g/reseng/git/group-config
+[safe]
+	directory = /amaroq/hass

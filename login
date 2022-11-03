@@ -18,5 +18,3 @@ bash
 
 setenv WMSJAVA_HOME "/Library/WowzaStreamingEngine-4.7.8/java"
 
-
-

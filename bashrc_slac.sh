@@ -41,6 +41,3 @@ alias x2021.2='psApp x2021.2; source /afs/slac.stanford.edu/g/reseng/xilinx/2021
 
 alias xil='x2021.1'
 
-
-
-

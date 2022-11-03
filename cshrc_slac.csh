@@ -26,6 +26,3 @@ alias sim   source /afs/slac.stanford.edu/g/reseng/synopsys/vcs-mx/M-2017.03-1/s
 
 setenv LM_LICENSE_FILE 1717@rdlic
 
-
-
-

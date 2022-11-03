@@ -34,6 +34,24 @@ Host smurf-srv10
     HostName localhost
     Port 9798
 
+Host smurf-srv11
+    User cryo
+    ForwardX11 yes
+    ForwardX11Trusted yes
+    Compression yes
+    #HostName localhost
+    #Port 9798
+
+Host smurf-srv24
+    User cryo
+    ForwardX11 yes
+    ForwardX11Trusted yes
+    Compression yes
+    PreferredAuthentications=password
+    PubkeyAuthentication=no
+    #HostName localhost
+    #Port 9798
+
 Host rdsrv300
     PreferredAuthentications=password
     PubkeyAuthentication=no

@@ -18,6 +18,7 @@ alias afs='kinit rherbst; klog.krb5 rherbst'
 alias vnc='sudo systemctl start x11vnc_rherbst'
 alias vnc2='vncserver :2 &'
 alias jlab='ssh -Y rherbst@hallgw.jlab.org -L 5930:localhost:5930 -L 5931:localhost:5931'
+alias dtc='/afs/slac/g/cci/package/linux-xlnx/scripts/dtc/dtc'
 
 # Simulation
 alias sim='psApp s2017.03; source /afs/slac.stanford.edu/g/reseng/synopsys/vcs-mx/M-2017.03-1/settings.sh'
@@ -39,5 +40,4 @@ alias x2021.1='psApp x2021.1; source /afs/slac.stanford.edu/g/reseng/xilinx/2021
 alias x2021.2='psApp x2021.2; source /afs/slac.stanford.edu/g/reseng/xilinx/2021.2/Vivado/2021.2/settings64.sh'
 
 alias xil='x2021.1'
-
 

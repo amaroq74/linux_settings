@@ -126,3 +126,6 @@ call togglebg#map("<F5>")
 set directory=~/.vim/cache/
 set backupdir=~/.vim/backup/
 
+# Syntastic settings
+let g:syntastic_mode_map = { 'passive_filetypes': ['python'] }
+

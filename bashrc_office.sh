@@ -24,5 +24,3 @@ alias pcon='kenwood.py W6SCF; pat connect ax25:///N6ZX-4/W6SCF-10'
 alias ptel='pat connect telnet'
 alias n0ary='kenwood.py N0ARY; call ax0 n0ary-1'
 alias aprsen='kenwood.py APRS'
-
-

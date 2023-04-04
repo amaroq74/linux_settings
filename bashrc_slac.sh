@@ -38,6 +38,7 @@ alias x2020.1='psApp x2020.1; source /afs/slac.stanford.edu/g/reseng/xilinx/2020
 alias x2020.2='psApp x2020.2; source /afs/slac.stanford.edu/g/reseng/xilinx/2020.2/Vivado/2020.2/settings64.sh'
 alias x2021.1='psApp x2021.1; source /afs/slac.stanford.edu/g/reseng/xilinx/2021.1/Vivado/2021.1/settings64.sh'
 alias x2021.2='psApp x2021.2; source /afs/slac.stanford.edu/g/reseng/xilinx/2021.2/Vivado/2021.2/settings64.sh'
+alias x2022.2='psApp x2022.2; source /afs/slac.stanford.edu/g/reseng/xilinx/2022.2/Vivado/2022.2/settings64.sh'
 
-alias xil='x2021.1'
+alias xil='x2022.2'
 

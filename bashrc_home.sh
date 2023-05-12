@@ -11,3 +11,5 @@ export USER_LIB_PATH=$HOME/projects/arduino_libraries/libraries/
 ##### Aliases ######
 
 
+alias rrail='/home/ryan/Rocrail/rocview.sh /home/ryan/Rocrail'
+

@@ -25,6 +25,7 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'nvie/vim-flake8'
+Plugin 'madox2/vim-ai'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -125,4 +126,7 @@ call togglebg#map("<F5>")
 
 set directory=~/.vim/cache/
 set backupdir=~/.vim/backup/
+
+" Syntastic settings
+let g:syntastic_mode_map = { 'passive_filetypes': ['python'] }
 

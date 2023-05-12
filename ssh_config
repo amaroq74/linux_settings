@@ -111,3 +111,6 @@ Host rdsrv313
 Host rdsrv314
     PreferredAuthentications=password
     PubkeyAuthentication=no
+
+Host rdsrv404
+   user rherbst

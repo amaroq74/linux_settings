@@ -46,9 +46,9 @@ Host smurf-srv24
     User cryo
     ForwardX11 yes
     ForwardX11Trusted yes
-    Compression yes
-    PreferredAuthentications=password
-    PubkeyAuthentication=no
+    #Compression yes
+    #PreferredAuthentications=password
+    #PubkeyAuthentication=no
     #HostName localhost
     #Port 9798
 

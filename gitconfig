@@ -135,3 +135,11 @@
 	directory = /afs/slac.stanford.edu/u/ey/rherbst/projects/Simple-Kria-Kv260-Example/firmware/submodules/axi-soc-ultra-plus-core
 	directory = /afs/slac.stanford.edu/u/ey/rherbst/projects/gen_daq/rogue_v6
 	directory = /afs/slac.stanford.edu/u/ey/rherbst/projects/gen_daq/rogue-base-docker
+	directory = /afs/slac.stanford.edu/u/ey/rherbst/projects/smurf/pysmurf
+	directory = /afs/slac.stanford.edu/u/ey/rherbst/projects/smurf/smurf-rogue-docker
+	directory = /afs/slac.stanford.edu/u/ey/rherbst/projects/smurf/smurf-roguev6-docker
+	directory = /afs/slac.stanford.edu/u/ey/rherbst/projects/smurf/amc-carrier-core
+	directory = /afs/slac.stanford.edu/u/ey/rherbst/projects/smurf/cryo-det
+	directory = /afs/slac.stanford.edu/u/ey/rherbst/projects/tid-id-xilinx-dockers
+[credential]
+	helper = cache --timeout=36000

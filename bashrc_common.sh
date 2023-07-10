@@ -42,6 +42,7 @@ alias amaroq='ssh ryan@gw.amaroq.net -p 2222 -C -X -L 5950:172.16.20.13:5900'
 
 alias dlist='sudo journalctl -u dnsmasq -r | grep DHCPACK | head -50'
 alias gmenu="awk -F\' '/menuentry / {print $2}' /boot/grub/grub.cfg"
+alias gt='echo $GITHUB_TOKEN'
 
 ############# Setup Conda ##############333
 if [ -f $HOME/anaconda3/etc/profile.d/conda.sh ]; then

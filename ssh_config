@@ -1,11 +1,14 @@
 
-#host *
+host *
+   ServerAliveInterval 100
+
 #GSSAPIAuthentication yes
 #GSSAPIDelegateCredentials yes
 
 host     amaroq
 hostName gw.amaroq.net
 User ryan
+port 2222
 
 host     gw.amaroq.net
 hostName gw.amaroq.net
@@ -78,3 +81,7 @@ Host rdsrv314
 
 Host rdsrv404
    user rherbst
+
+Host smurf-srv11
+   user cryo
+   KexAlgorithms +diffie-hellman-group1-sha1

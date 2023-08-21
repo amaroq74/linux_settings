@@ -11,9 +11,10 @@ host     gw.amaroq.net
 hostName gw.amaroq.net
 User ryan
 
-host     slac
+host     office
 hostName pc95124.slac.stanford.edu
-User rherbst
+User ryan
+port 2222
 
 Host rdsrv300
     PreferredAuthentications=password

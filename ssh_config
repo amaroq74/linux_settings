@@ -14,7 +14,7 @@ host     gw.amaroq.net
 hostName gw.amaroq.net
 User ryan
 
-host     office
+host     soffice
 hostName pc95124.slac.stanford.edu
 User ryan
 port 2222

@@ -36,8 +36,9 @@ alias root='sudo -E /bin/bash'
 alias uset='cd $HOME/.linux_settings; git pull; git submodule update; chmod go-rwx ssh_config; cd $HOME'
 alias pset='cd $HOME/.linux_settings; git commit -a -m Updates; git push; cd $HOME'
 
-alias slac='ssh rherbst@centos7.slac.stanford.edu -C -Y'
-alias amaroq='ssh ryan@gw.amaroq.net -p 2222 -C -X -L 5950:172.16.20.13:5900'
+alias slacgw='ssh rherbst@centos7.slac.stanford.edu -C -Y -L 127.0.0.1:8022:pc95124.slac.stanford.edu:22'
+alias slac='ssh ryan@localhost -p 8022 -C -Y -L 127.0.0.1:5910:127.0.0.1:5900'
+alias amaroq='ssh ryan@gw.amaroq.net -p 2222 -C -X'
 
 alias dlist='sudo journalctl -u dnsmasq -r | grep DHCPACK | head -50'
 alias gmenu="awk -F\' '/menuentry / {print $2}' /boot/grub/grub.cfg"

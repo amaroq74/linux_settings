@@ -43,3 +43,4 @@ alias x2022.2='psApp x2022.2; source /afs/slac.stanford.edu/g/reseng/xilinx/2022
 
 alias xil='x2022.2'
 
+alias setup_git='mkdir -m 700 /u1/rherbst/credential'

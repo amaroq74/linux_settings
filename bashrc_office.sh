@@ -21,7 +21,6 @@ alias gm_mount='mkdir $HOME/Desktop/gm; sudo cryptsetup luksOpen $HOME/Documents
 alias gm_mountrw='mkdir $HOME/Desktop/gm; sudo cryptsetup luksOpen $HOME/Documents/SystemBackups/old/gm.iso gm;sudo mount /dev/mapper/gm $HOME/Desktop/gm'
 alias gm_umount='sudo umount $HOME/Desktop/gm; sudo cryptsetup luksClose gm; rmdir $HOME/Desktop/gm'
 
-alias start_adesk='export DISPLAY=:0; anydesk &'
 
 #### Ham Radio ####
 #alias pcon='kenwood.py K6ATH; pat connect ax25:///K6ATH-10'

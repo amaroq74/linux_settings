@@ -144,6 +144,6 @@
 	directory = /afs/slac.stanford.edu/u/ey/rherbst/projects/cryo-det
 	directory = /afs/slac.stanford.edu/g/reseng/vol10/hwdb
 [credential]
-	helper = cache --timeout=36000
+	helper = "!f() { echo username=slacrherbst; echo \"password=$GITHUB_TOKEN\"; };f"
 [push]
 	default = matching

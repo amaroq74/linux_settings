@@ -1,5 +1,12 @@
 #!/bin/bash
 
+mkdir -p $HOME/.ssh
+
+chmod go-rwx ssh_config
+
+touch $HOME/.linux_settings/bashrc_local.sh
+chmod go-rwx $HOME/.linux_settings/bashrc_local.sh
+
 rm -rf $HOME/.vim
 
 cd $HOME; ln -sf .linux_settings/bash_logout      .bash_logout

@@ -37,6 +37,7 @@ alias uset='cd $HOME/.linux_settings; git pull; git submodule update; chmod go-r
 alias pset='cd $HOME/.linux_settings; git commit -a -m Updates; git push; cd $HOME'
 
 alias slac='ssh ryan@pc95124.slac.stanford.edu -J rherbst@centos7.slac.stanford.edu -C -Y -L 127.0.0.1:5910:127.0.0.1:5900'
+alias slacgw='ssh rherbst@centos7.slac.stanford.edu -C -Y'
 alias slacscp='scp -J rherbst@centos7.slac.stanford.edu'
 alias amaroq='ssh ryan@gw.amaroq.net -p 2222 -C -X'
 alias office='ssh ryan@office.amaroq.net -J ryan@gw.amaroq.net:2222 -C -X -L 127.0.0.1:5911:127.0.0.1:5900'

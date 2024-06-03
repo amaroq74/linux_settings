@@ -14,7 +14,7 @@ export PATH=${PATH}:/usr/kerberos/bin
 LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:/u1/wine/lib
 
 ##### Aliases ######
-alias afs='kinit rherbst; klog.krb5 rherbst'
+alias afs='kinit rherbst; aklog'
 alias vnc='sudo systemctl start x11vnc_rherbst'
 alias vnc2='vncserver :2 &'
 alias jlab='ssh -Y rherbst@hallgw.jlab.org -L 5930:localhost:5930 -L 5931:localhost:5931'

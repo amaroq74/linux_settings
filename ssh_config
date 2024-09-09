@@ -1,38 +1,22 @@
 
 host *
-GSSAPIAuthentication yes
-GSSAPIDelegateCredentials yes
+   ServerAliveInterval 100
+
+#GSSAPIAuthentication yes
+#GSSAPIDelegateCredentials yes
 
 host     amaroq
 hostName gw.amaroq.net
 User ryan
+port 2222
 
 host     gw.amaroq.net
 hostName gw.amaroq.net
 User ryan
 
-host     slac
+host     soffice
 hostName pc95124.slac.stanford.edu
-User rherbst
-
-host ubuntu-test
-   hostName 134.79.129.142
-
-Host smurf-srv09
-    User cryo
-    ForwardX11 yes
-    ForwardX11Trusted yes
-    Compression yes
-    HostName localhost
-    Port 9788
-
-Host smurf-srv10
-    User cryo
-    ForwardX11 yes
-    ForwardX11Trusted yes
-    Compression yes
-    HostName localhost
-    Port 9798
+User ryan
 
 Host rdsrv300
     PreferredAuthentications=password
@@ -54,10 +38,49 @@ Host rdsrv304
     PreferredAuthentications=password
     PubkeyAuthentication=no
 
+Host rdsrv305
+    PreferredAuthentications=password
+    PubkeyAuthentication=no
+
+Host rdsrv306
+    PreferredAuthentications=password
+    PubkeyAuthentication=no
+
 Host rdsrv307
+    PreferredAuthentications=password
+    PubkeyAuthentication=no
+
+Host rdsrv308
+    PreferredAuthentications=password
+    PubkeyAuthentication=no
+
+Host rdsrv309
+    PreferredAuthentications=password
+    PubkeyAuthentication=no
+
+Host rdsrv310
+    PreferredAuthentications=password
+    PubkeyAuthentication=no
+
+Host rdsrv311
+    PreferredAuthentications=password
+    PubkeyAuthentication=no
+
+Host rdsrv312
+    PreferredAuthentications=password
+    PubkeyAuthentication=no
+
+Host rdsrv313
     PreferredAuthentications=password
     PubkeyAuthentication=no
 
 Host rdsrv314
     PreferredAuthentications=password
     PubkeyAuthentication=no
+
+Host rdsrv404
+   user rherbst
+
+Host smurf-srv11
+   user cryo
+   KexAlgorithms +diffie-hellman-group1-sha1

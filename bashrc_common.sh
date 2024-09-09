@@ -28,7 +28,6 @@ alias l='ls --color=auto'
 alias ll='ls -l --color=auto'
 alias la='ls -la --color=auto'
 alias grep='grep --color=auto'
-alias dlog='journalctl -u dnsmasq -r | grep DHCPACK | less'
 
 alias ssh='ssh -C -Y'
 alias sudo='sudo -E'
@@ -37,12 +36,16 @@ alias root='sudo -E /bin/bash'
 alias uset='cd $HOME/.linux_settings; git pull; git submodule update; chmod go-rwx ssh_config; cd $HOME'
 alias pset='cd $HOME/.linux_settings; git commit -a -m Updates; git push; cd $HOME'
 
-alias slac='ssh ryan@pc95124.slac.stanford.edu -p 2222 -C -Y -L 5910:localhost:5900 -L 5911:localhost:5901 -L 5912:localhost:5902'
-alias pius='ssh ryan@gw.pius.org -C -Y -L 5920:localhost:5901 -L 5921:172.16.24.121:5900 -L 5922:172.16.24.122:5900'
+alias slac='ssh ryan@pc95124.slac.stanford.edu -J rherbst@jump.slac.stanford.edu -C -Y -L 127.0.0.1:5910:127.0.0.1:5900'
+alias slacgw='ssh rherbst@centos7.slac.stanford.edu -C -Y'
+alias slacscp='scp -J rherbst@centos7.slac.stanford.edu'
 alias amaroq='ssh ryan@gw.amaroq.net -p 2222 -C -X'
+alias office='ssh ryan@office.amaroq.net -J ryan@gw.amaroq.net:2222 -C -X -L 127.0.0.1:5911:127.0.0.1:5900'
+alias officescp='scp -J ryan@gw.amaroq.net:2222'
 
-alias dlist='sudo journalctl -u dnsmasq -r | grep DHCPACK | head'
+alias dlist='sudo journalctl -u dnsmasq -r | grep DHCPACK | head -50'
 alias gmenu="awk -F\' '/menuentry / {print $2}' /boot/grub/grub.cfg"
+alias gt='echo $GITHUB_TOKEN'
 
 ############# Setup Conda ##############333
 if [ -f $HOME/anaconda3/etc/profile.d/conda.sh ]; then

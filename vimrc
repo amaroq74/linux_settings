@@ -25,11 +25,13 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'nvie/vim-flake8'
+Plugin 'madox2/vim-ai'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
 
+set guifont=Monospace\ 10
 set encoding=utf-8
 
 " Tabs are evil
@@ -52,6 +54,8 @@ command -range -nargs=1 InstInd <line1>,<line2> s/=>/\( \)\{<args>\}=>/
 command -range Sysc    <line1>,<line2> s/\(\s\+\)\(\S\+\).*/\1\2("\2"),/
 command -range Debug   <line1>,<line2> s/\(\s\+\)\(\S\+\)\(\s\+\)\(\S\+\)\(\s\+\):.*/   attribute mark_debug of \4\5: signal is "true";/
 command -range Debugp  <line1>,<line2> s/\(\s\+\)\(\S\+\)\(\s\+\):.*/   attribute mark_debug of \2\3: signal is "true";/
+
+command Zoom set guifont=*
 
 " Python
 au BufNewFile,BufRead *.py
@@ -125,4 +129,7 @@ call togglebg#map("<F5>")
 
 set directory=~/.vim/cache/
 set backupdir=~/.vim/backup/
+
+" Syntastic settings
+let g:syntastic_mode_map = { 'passive_filetypes': ['python'] }
 

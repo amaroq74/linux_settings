@@ -25,6 +25,8 @@ alias modepkt='lrigctl M PKTFM 0'
 alias modeusb='lrigctl M USB 0'
 alias gt='GridTracker --enable-speech-dispatcher'
 
+alias audio='pax11publish -r'
+
 alias ax25off='sudo systemctl stop ax25; sleep 1; sudo systemctl stop direwolf'
 alias ax25on='sudo systemctl restart direwolf; sleep 1; sudo systemctl restart ax25'
 

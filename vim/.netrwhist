@@ -1,6 +1,3 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =4
-let g:netrw_dirhist_1='/afs/slac.stanford.edu/u/ey/rherbst/projects/gen_daq/surf/axi/simlink/rtl'
-let g:netrw_dirhist_2='/afs/slac.stanford.edu/u/ey/rherbst/projects/gen_daq/rogue/include/rogue/exceptions'
-let g:netrw_dirhist_3='/lib/modules/4.15.0-46-generic'
-let g:netrw_dirhist_4='/usr/clas12/release/1.3.2/coda/src/rc/runControl.old/Xui'
+let g:netrw_dirhistcnt =1
+let g:netrw_dirhist_1='/home/ryan'

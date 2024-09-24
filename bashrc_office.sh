@@ -16,15 +16,14 @@ alias lrigctl='rigctl --model=4 -r 127.0.0.1:12346'
 
 alias lrigfreq='lrigctl V VFOB f'
 
-#alias pcon1='lrigctl V VFOB E 35; pat connect ax25:///K6ATH-10'
-#alias pcon2='lrigctl V VFOB E 32; pat connect ax25:///N6ZX-4/W6SCF-10'
-#alias n0ary='lrigctl V VFOB E 31; call ax0 n0ary-1'
-#alias aprsen='lrigctl V VFOB E 34'
+alias pcon_ke6afe='kenwood_mem 32;pat connect ax25:///KE6AFE-10'
+alias pcon_n6zx='kenwood_mem 32;pat connect ax25:///N6ZX-10'
+alias aprsen='kenwood_mem 34'
+alias n0ary='kenwood_mem 31; call ax0 n0ary-1'
+alias w3xsc='kenwood_mem 30; call ax0 w3xsc'
 
-alias pcon1='lrigctl V VFOB F 145730000; pat connect ax25:///K6ATH-10'
-alias pcon2='lrigctl V VFOB F 145630000; pat connect ax25:///N6ZX-4/W6SCF-10'
-alias n0ary='lrigctl V VFOB F 145090000; call ax0 n0ary-1'
-alias aprsen='lrigctl V VFOB F 144390000'
+alias gqrx_funcube='gqrx --conf /home/ryan/.config/gqrx/funcube_7536.conf'
+alias gqrx_rtlsdr='gqrx --conf /home/ryan/.config/gqrx/rtl_sdr_7537.conf'
 
 alias yaac='java -jar /usr/local/yaac/YAAC.jar'
 

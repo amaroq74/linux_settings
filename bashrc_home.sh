@@ -11,6 +11,5 @@ export USER_LIB_PATH=$HOME/projects/arduino_libraries/libraries/
 ##### Aliases ######
 
 
-alias start_adesk='export DISPLAY=:0; anydesk &'
-alias rrail='/home/ryan/Rocrail/rocview.sh /home/ryan/Rocrail'
+alias rtl_list='lsusb | grep RTL2838; lsusb -v | grep iSerial | grep 000000'
 

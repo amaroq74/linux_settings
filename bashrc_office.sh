@@ -21,6 +21,7 @@ alias pcon_n6zx='kenwood_mem 32;pat connect ax25:///N6ZX-10'
 alias aprsen='kenwood_mem 34'
 alias n0ary='kenwood_mem 31; call ax0 n0ary-1'
 alias w3xsc='kenwood_mem 30; call ax0 w3xsc'
+alias k9jfc='kenwood_mem 43; call ax0 k6fjc-5'
 
 alias gqrx_funcube='gqrx --conf /home/ryan/.config/gqrx/funcube_7536.conf'
 alias gqrx_rtlsdr='gqrx --conf /home/ryan/.config/gqrx/rtl_sdr_7537.conf'

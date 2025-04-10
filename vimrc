@@ -110,7 +110,7 @@ autocmd vimenter * NERDTree
 if has('gui_running')
   set background=dark
    colorscheme solarized
-   set lines=50 columns=150
+   set lines=55 columns=200
    set guioptions-=m  "remove menu bar
    set guioptions-=T  "remove toolbar
    set guioptions-=r  "remove right-hand scroll bar

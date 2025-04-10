@@ -17,8 +17,9 @@ alias pcon_n6zx='lrigctl V VFOA F 145630000 M PKTFM 0; pat connect ax25:///N6ZX-
 
 alias bbs_n0ary='lrigctl V VFOA F 145090000 M PKTFM 0'
 
-alias ardopen='lrigctl V VFOA F 007102200 M USB 0'
-alias ardop='/usr/local/bin/piardopc 8515 plughw:3,0 plughw:3,0'
+alias ardopen40m='lrigctl V VFOA F 007102200 M USB 0'
+alias ardopen20m='lrigctl V VFOA F 014104000 M USB 0'
+alias ardop='/home/ryan/bin/ardopcf -G 8088 8515 plughw:3,0 plughw:3,0 -H "TRAILER 140"'
 
 alias aprsen='lrigctl V VFOA F 144390000 M PKTFM 0'
 alias modepkt='lrigctl V VFOA M PKTFM 0'

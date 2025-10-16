@@ -45,3 +45,19 @@ alias x2024.1='psApp x2024.1; source /afs/slac.stanford.edu/g/reseng/xilinx/2024
 alias xil='x2024.1'
 
 alias setup_git='mkdir -m 700 /u1/rherbst/credential'
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/u1/rherbst/anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/u1/rherbst/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/u1/rherbst/anaconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/u1/rherbst/anaconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+

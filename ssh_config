@@ -10,6 +10,12 @@ hostName gw.amaroq.net
 User ryan
 port 2222
 
+host     aliska
+User ryan
+
+host     office
+User ryan
+
 host     gw.amaroq.net
 hostName gw.amaroq.net
 User ryan

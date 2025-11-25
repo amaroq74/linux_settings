@@ -21,3 +21,5 @@ cd $HOME; ln -sf .linux_settings/vim              .vim
 cd $HOME; ln -sf .linux_settings/vimrc            .vimrc
 cd $HOME/.ssh; ln -sf ../.linux_settings/ssh_config  config
 cd $HOME; ln -sf .linux_settings/flake8           .flake8
+
+cd $HOME/.linux_settings/vim/bundle; git clone https://github.com/gmarik/Vundle.vim.git

@@ -32,3 +32,4 @@ alias dpacket='direwolf -c /home/ryan/Documents/HamRadio/direwolf_sdr.conf'
 
 alias yaac='java -jar /usr/local/yaac/YAAC.jar'
 
+alias vlc_stream='vlc --demux=rawaud --rawaud-channels=1 --rawaud-samplerate=48000 udp://@:7356'

@@ -64,6 +64,9 @@
 	largest-files-bare = !git rev-list --objects --all | grep \"$(git verify-pack -v objects/pack/*.idx | sort -k 3 -n | tail -50 | awk '{print$1}')\"
 	cleanup = ! git reflog expire --expire=now --all && git gc --prune=now
 
+   rst = !git reset --hard origin/main && git checkout main && git pull --rebase
+   pre-rst = !git reset --hard origin/pre-release && git checkout pre-release && git pull --rebase
+   mst-rst = !git reset --hard origin/master && git checkout master && git pull --rebase
 
 [filter "lfs"]
 	clean = git-lfs clean -- %f

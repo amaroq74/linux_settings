@@ -40,7 +40,7 @@ alias slac='ssh ryan@pc95124.slac.stanford.edu -J rherbst@s3dflogin.slac.stanfor
 alias slacgw='ssh rherbst@centos7.slac.stanford.edu -C -Y'
 alias slacscp='scp -J rherbst@centos7.slac.stanford.edu'
 alias amaroq='ssh ryan@gw.amaroq.net -p 2222 -C -X'
-alias office='ssh ryan@office.amaroq.net -J ryan@gw.amaroq.net:2222 -C -X :3389'
+alias office='ssh ryan@office.amaroq.net -J ryan@gw.amaroq.net:2222 -C -X'
 alias officescp='scp -J ryan@gw.amaroq.net:2222'
 alias loffice='ssh ryan@office'
 

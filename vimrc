@@ -27,6 +27,7 @@ Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'nvie/vim-flake8'
 Plugin 'madox2/vim-ai'
+Plugin 'madox2/vim-ai-provider-google'
 Plugin 'Yggdroot/indentLine'
 Plugin 'pedrohdz/vim-yaml-folds'
 
@@ -103,6 +104,17 @@ let g:NERDTreeDirArrowCollapsible='-'
 autocmd vimenter * silent! lcd %:p:h
 autocmd vimenter * NERDTree
 
+"AI interface
+let g:vim_ai_providers = {
+   \ 'default': {
+       \ 'provider': 'google',
+       \ 'options': {
+           \ 'model': 'gemini-3-pro-preview',
+           \ 'endpoint_url': 'https://generativelanguage.googleapis.com/v1beta/models',
+       \ },
+   \ },
+\ }
+
 " Find bad whitespace
 "au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
 
@@ -135,4 +147,6 @@ set backupdir=~/.vim/backup/
 
 " Syntastic settings
 let g:syntastic_mode_map = { 'passive_filetypes': ['python'] }
+
+let g:vim_ai_roles_config_file = expand("~/.vim/vim-ai.roles.ini")
 
